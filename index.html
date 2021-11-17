@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.min.js" integrity="sha256-gSqw5G+Gss6YqyQlqyIkuQ0IRZUqGsDVq9c0tiF+mL8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container ">
+    <p class="is-size-1 has-text-centered">
+      Website Form
+    </p>
+    <form id="form" action="https://formspree.io/f/xrgrvawn" method="post">    
+      <div class="field" id="firstname">
+        <label class="label"> First Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input name="First Name" class="input " type="text" placeholder="enter first name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+          <p class="help"></p>
+        </div>
+      </div>
+      
+      <div class="field" id="lastname">
+        <label class="label">Lastname</label>
+        <div class="control has-icons-left has-icons-right">
+          <input name="Last Name" class="input " type="text" placeholder="enter last name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help"></p>
+      </div>
+      
+      <div class="field" id="email">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input name="Email" class="input" type="email" placeholder="Email input" >
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help "></p>
+      </div>
+      
+      <div class="field" id="countrycode">
+        <label class="label">countrycode</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>+ 91</option>
+              <option>+1</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field" id="phonenumber">
+        <label class="label"> mobile number</label>
+        <div class="control has-icons-left has-icons-right">
+          <input name="Mobile number" class="input" type="text" placeholder="mobile number">
+          <span class="icon is-small is-left">
+            <i class="fas fa-phone"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help"></p>
+      </div>
+      
+      <div class="field" id="msg">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea name="Message" class="textarea input" placeholder="Textarea">
+          </textarea>    
+          <span class="icon is-small is-right">
+            <i class="sa"></i>
+          </span>
+        </div>
+        <p class="help "></p>
+      </div>
+      
+      <div class="field" id = "terms">
+        <div class="control">
+          <label class="checkbox input">
+            <input  type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+          <p class="help"></p>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control" id='submit'>
+          <button class="button is-link" type="submit">Submit</button>
+        </div>
+        <div class="control " id='reset'>
+          <button class="button is-link" type="button" >
+            <i class="fas fa-history"></i>&nbsp; Reset
+          </button> 
+        </div>
+      </div>  
+    </form>
+   
+  </div>
+</body>
+</html>
